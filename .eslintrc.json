@@ -1,0 +1,55 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      // ECMAScript의 언어 확장 기능 설정
+      "jsx": true
+    },
+    "ecmaVersion": 12, // ECMAScript 버전 설정
+    "sourceType": "module" // import, export를 사용할 수 있습니다.
+  },
+
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "next",
+    "next/core-web-vitals",
+    "airbnb",
+    "plugin:prettier/recommended"
+  ],
+
+  "rules": {
+    "react/react-in-jsx-scope": 0,
+    "react/prefer-stateless-function": 0,
+    "react/jsx-filename-extension": 0,
+    "react/jsx-one-expression-per-line": 0,
+    "react/jsx-props-no-spreading": 0, // props를 스프레드 할 수 있다.
+    "react/no-array-index-key": 0, // key값으로 index를 사용할 수 있다.
+    "react/prop-types": 0, // proptypes를 사용하지 않는다.
+    "implicit-arrow-linebreak": 0, // 화살표 함수 다음에 줄 바꿈을 사용할 수 있다.
+    "no-invalid-css": 0, // 잘못된 속성 값 경고
+    "no-use-before-define": 0, // 미사용 전에 정의
+    "no-alert": 0, // 알럿 사용시 warning off
+    "no-console": 0, // console.log 사용시 warning off
+    "@typescript-eslint/no-unused-vars": "warn", // 사용안한 변수 경고
+    "@typescript-eslint/no-explicit-any": ["off"],
+    "import/prefer-default-export": 0, // export default 권장
+    "operator-linebreak": 0, // 연산자 다음 줄 바꿈을 사용할 수 있다
+    "react-hooks/rules-of-hooks": "warn", // Checks rules of Hooks
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      } // import 시에 확장자 명은 사용하지 않는다.
+    ]
+  }
+}
