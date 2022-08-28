@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <HomeBlock>
       <Head>
-        <title>Create Next App</title>
+        <title>Create Soyeon's Next App</title>
       </Head>
       <div>
         <h1>Next.js + Typescript</h1>
