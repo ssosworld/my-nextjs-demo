@@ -1,7 +1,14 @@
 import Head from "next/head";
+import router from "next/router";
 import styled from "styled-components";
 
 export default function Home() {
+  const onMove = () => {
+    router.push({
+      pathname: "/main",
+    });
+  };
+
   return (
     <HomeBlock>
       <Head>
@@ -9,6 +16,11 @@ export default function Home() {
       </Head>
       <div>
         <h1>Next.js + Typescript</h1>
+      </div>
+      <div>
+        <a href="#!" onClick={() => onMove()}>
+          click me
+        </a>
       </div>
     </HomeBlock>
   );
