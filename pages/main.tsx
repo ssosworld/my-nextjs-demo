@@ -19,7 +19,11 @@ export default function Home() {
               Go TodoList
             </a>
           </li>
-          <li>{/* <Link to="/test"> Go React Practice</Link> */}</li>
+          <li>
+            <a href="#!" onClick={() => onMove("counter")}>
+              Go count
+            </a>
+          </li>
         </ul>
       </div>
     </HomeBlock>
