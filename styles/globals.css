@@ -1,4 +1,4 @@
-html,
+/* html,
 body {
   padding: 0;
   margin: 0;
@@ -22,5 +22,267 @@ a {
   body {
     color: white;
     background: black;
+  }
+} */
+
+:root {
+  --basic-a: #fff;
+  --basic-b: #f8f9fa;
+  --basic-c: #eff2f4;
+  --basic-d: #e3e8ec;
+  --basic-e: #cfd6dc;
+  --basic-f: #b2bac2;
+  --basic-g: #87929c;
+  --basic-h: #606a74;
+  --basic-i: #444b52;
+  --basic-j: #2e3338;
+  --basic-k: #191c20;
+  --basic-l: #060b11;
+  --basic-m: rgba(6, 11, 17, 0.48);
+  --basic-n: rgba(6, 11, 17, 0.24);
+
+  --primary: #ffeb00;
+  --primary-a: #fff9bf;
+  --primary-b: #fff36b;
+  --primary-c: #ffdb00;
+  --primary-d: #febd00;
+  --primary-text: #060b11;
+
+  --info: #008dff;
+  --info-a: #e3f3ff;
+  --info-b: #bbe0ff;
+  --info-c: #0a79eb;
+  --info-d: #1348ba;
+
+  --danger: #ff3c3c;
+  --danger-a: #fff0f0;
+  --danger-b: #ffd8d8;
+  --danger-c: #e50e0e;
+  --danger-d: #b30000;
+
+  --bg-a: rgba(255, 255, 255, 0.48);
+  --bg-b: #f1f3f5;
+  --bg-c: transparent;
+  --bg-d: #fff;
+  --bg-e: #fff;
+  --bg-f: #fff;
+  --bg-g: #fff;
+
+  --press-a: rgba(0, 0, 0, 0.06);
+  --press-b: rgba(0, 0, 0, 0.04);
+
+  --divider-a: rgba(135, 146, 156, 0.2);
+  --divider-b: rgba(135, 146, 156, 0.1);
+
+  --overlay: rgba(0, 0, 0, 0.6);
+
+  --point-a-a: #008dff;
+  --point-a-b: rgba(0, 141, 255, 0.48);
+  --point-a-c: rgba(0, 141, 255, 0.24);
+  --point-a-d: rgba(0, 141, 255, 0.1);
+  --point-a-e: rgba(0, 141, 255, 0.06);
+
+  --point-b-a: #03e1c1;
+  --point-b-b: rgba(3, 255, 193, 0.48);
+  --point-b-c: rgba(3, 255, 193, 0.24);
+  --point-b-d: rgba(3, 255, 193, 0.1);
+  --point-b-e: rgba(3, 255, 193, 0.06);
+
+  --point-c-a: #af52de;
+  --point-c-b: rgba(175, 82, 222, 0.48);
+  --point-c-c: rgba(175, 82, 222, 0.24);
+  --point-c-d: rgba(175, 82, 222, 0.1);
+  --point-c-e: rgba(175, 82, 222, 0.06);
+
+  --point-d-a: #ff7143;
+  --point-d-b: rgba(255, 113, 67, 0.48);
+  --point-d-c: rgba(255, 113, 67, 0.24);
+  --point-d-d: rgba(255, 113, 67, 0.1);
+  --point-d-e: rgba(255, 113, 67, 0.06);
+
+  --point-e-a: #8a76ff;
+  --point-e-b: rgba(138, 118, 255, 0.48);
+  --point-e-c: rgba(138, 118, 255, 0.24);
+  --point-e-d: rgba(138, 118, 255, 0.1);
+  --point-e-e: rgba(138, 118, 255, 0.06);
+
+  --point-f-a: #6c48ff;
+  --point-f-b: rgba(108, 72, 255, 0.48);
+  --point-f-c: rgba(108, 72, 255, 0.24);
+  --point-f-d: rgba(108, 72, 255, 0.1);
+  --point-f-e: rgba(108, 72, 255, 0.06);
+
+  --point-g-a: #ff3c3c;
+  --point-g-b: rgba(255, 60, 60, 0.48);
+  --point-g-c: rgba(255, 60, 60, 0.24);
+  --point-g-d: rgba(255, 60, 60, 0.1);
+  --point-g-e: rgba(255, 60, 60, 0.06);
+
+  --point-h-a: #1cd5ff;
+  --point-h-b: rgba(28, 213, 255, 0.48);
+  --point-h-c: rgba(28, 213, 255, 0.24);
+  --point-h-d: rgba(28, 213, 255, 0.1);
+  --point-h-e: rgba(28, 213, 255, 0.06);
+
+  --point-i-a: #febd00;
+  --point-i-b: rgba(254, 189, 0, 0.48);
+  --point-i-c: rgba(254, 189, 0, 0.24);
+  --point-i-d: rgba(254, 189, 0, 0.1);
+  --point-i-e: rgba(254, 189, 0, 0.06);
+}
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --basic-a: #16191c;
+    --basic-b: #1b1e21;
+    --basic-c: #202326;
+    --basic-d: #25282b;
+    --basic-e: #3a3e42;
+    --basic-f: #52575c;
+    --basic-g: #767c82;
+    --basic-h: #9ea3a8;
+    --basic-i: #bcc0c4;
+    --basic-j: #d7d9db;
+    --basic-k: #eeeff0;
+    --basic-l: #fcfcfc;
+    --basic-m: rgba(252, 252, 252, 0.48);
+    --basic-n: rgba(252, 252, 252, 0.24);
+
+    --primary: #ffef3d;
+    --primary-a: #363614;
+    --primary-b: #6f6a0f;
+    --primary-c: #ffe33d;
+    --primary-d: #fecc3d;
+
+    --info: #3da8ff;
+    --info-a: #0d273d;
+    --info-b: #094475;
+    --info-c: #4499ef;
+    --info-d: #4b73ca;
+
+    --danger: #ff6a6a;
+    --danger-a: #361a1e;
+    --danger-b: #5c2629;
+    --danger-c: #eb4747;
+    --danger-d: #c53d3d;
+
+    --bg-a: rgba(22, 25, 28, 0.8);
+    --bg-b: #090c0f;
+    --bg-c: transparent;
+    --bg-d: #16191c;
+    --bg-e: #232629;
+    --bg-f: #282b2e;
+    --bg-g: #35393d;
+
+    --press-a: rgba(0, 0, 0, 0.12);
+    --press-b: rgba(255, 255, 255, 0.04);
+    --divider-a: rgba(118, 124, 130, 0.2);
+    --divider-b: rgba(3, 4, 5, 0.64);
+
+    --point-a-a: #3da8ff;
+    --point-a-b: rgba(51, 168, 255, 0.48);
+    --point-a-c: rgba(51, 168, 255, 0.24);
+    --point-a-d: rgba(51, 168, 255, 0.1);
+    --point-a-e: rgba(51, 168, 255, 0.06);
+
+    --point-b-a: #3fe8cf;
+    --point-b-b: rgba(63, 232, 207, 0.48);
+    --point-b-c: rgba(63, 232, 207, 0.24);
+    --point-b-d: rgba(63, 232, 207, 0.1);
+    --point-b-e: rgba(63, 232, 207, 0.06);
+
+    --point-c-a: #c27be5;
+    --point-c-b: rgba(194, 123, 229, 0.48);
+    --point-c-c: rgba(194, 123, 229, 0.24);
+    --point-c-d: rgba(194, 123, 229, 0.1);
+    --point-c-e: rgba(194, 123, 229, 0.06);
+
+    --point-d-a: #ff926f;
+    --point-d-b: rgba(255, 146, 111, 0.48);
+    --point-d-c: rgba(255, 146, 111, 0.24);
+    --point-d-d: rgba(255, 146, 111, 0.1);
+    --point-d-e: rgba(255, 146, 111, 0.06);
+
+    --point-e-a: #a596ff;
+    --point-e-b: rgba(165, 150, 255, 0.48);
+    --point-e-c: rgba(165, 150, 255, 0.24);
+    --point-e-d: rgba(165, 150, 255, 0.1);
+    --point-e-e: rgba(165, 150, 255, 0.06);
+
+    --point-f-a: #8f73ff;
+    --point-f-b: rgba(143, 115, 255, 0.48);
+    --point-f-c: rgba(143, 115, 255, 0.24);
+    --point-f-d: rgba(143, 115, 255, 0.1);
+    --point-f-e: rgba(143, 115, 255, 0.06);
+
+    --point-g-a: #ff6a6a;
+    --point-g-b: rgba(255, 106, 106, 0.48);
+    --point-g-c: rgba(255, 106, 106, 0.24);
+    --point-g-d: rgba(255, 106, 106, 0.1);
+    --point-g-e: rgba(255, 106, 106, 0.06);
+
+    --point-h-a: #52dfff;
+    --point-h-b: rgba(82, 223, 255, 0.48);
+    --point-h-c: rgba(82, 223, 255, 0.24);
+    --point-h-d: rgba(82, 223, 255, 0.1);
+    --point-h-e: rgba(82, 223, 255, 0.06);
+
+    --point-i-a: #fecc3d;
+    --point-i-b: rgba(255, 204, 61, 0.48);
+    --point-i-c: rgba(255, 204, 61, 0.24);
+    --point-i-d: rgba(255, 204, 61, 0.1);
+    --point-i-e: rgba(255, 204, 61, 0.06);
+  }
+} */
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  font-family: system-ui, "AppleGothicNeoSD", "Apple SD 산돌고딕 Neo",
+    "Microsoft NeoGothic", "Noto Sans KR", sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: var(--basic-a);
+}
+input {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  box-shadow: none;
+  color: var(--basic-l);
+}
+input:-internal-autofill-selected  {
+  background-color: transparent !important;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  transition: background-color 600000s 0s, color 600000s 0s;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.disabled,
+[disabled] {
+  cursor: default;
+  pointer-events: none;
+}
+
+@media (min-device-width: 375px) and (min-device-height: 812px) and (-webkit-min-device-pixel-ratio: 2) {
+  .wrapper {
+    padding-bottom: env(safe-area-inset-bottom);
+    padding-bottom: constant(safe-area-inset-bottom);
   }
 }

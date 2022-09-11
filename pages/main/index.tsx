@@ -1,10 +1,25 @@
 import router from "next/router";
 import styled from "styled-components";
 
+const list = [
+  {
+    title: "TodoList",
+    path: "todos",
+  },
+  {
+    title: "Count",
+    path: "counter",
+  },
+  {
+    title: "동적 input",
+    path: "practice",
+  },
+];
+
 export default function Home() {
   const onMove = (path: string) => {
     router.push({
-      pathname: `/${path}`,
+      pathname: `/main/${path}`,
     });
   };
 
@@ -14,16 +29,13 @@ export default function Home() {
         <h1>Hello :)</h1>
 
         <ul>
-          <li>
-            <a href="#!" onClick={() => onMove("todos")}>
-              Go TodoList
-            </a>
-          </li>
-          <li>
-            <a href="#!" onClick={() => onMove("counter")}>
-              Go count
-            </a>
-          </li>
+          {list.map((item, i) => (
+            <li key={i}>
+              <a href="#!" onClick={() => onMove(item.path)}>
+                Go {item.title}
+              </a>
+            </li>
+          ))}
         </ul>
       </div>
     </HomeBlock>
