@@ -1,4 +1,5 @@
 import "../styles/globals.css";
+// import "../styles/style.scss";
 import type { AppProps } from "next/app";
 import { wrapper } from "../core/redux";
 
