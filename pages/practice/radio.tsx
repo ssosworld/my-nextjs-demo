@@ -1,8 +1,8 @@
 import React from "react";
 import Inputs from "../../components/practice/Inputs";
 
-const practice = () => {
+const dynamicRadio = () => {
   return <Inputs />;
 };
 
-export default practice;
+export default dynamicRadio;

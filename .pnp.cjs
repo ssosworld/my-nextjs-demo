@@ -39,7 +39,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react-redux", "npm:7.1.24"],\
             ["@types/styled-components", "npm:5.1.26"],\
             ["babel-plugin-styled-components", "virtual:0824480ade294aa0544548ac7118269cbdd3643e18de4c9f3ce2a5f827889e7d8db80b707c85b5ec0c67261c9625a0e2721d972be8bc88bba765214ab7c0981b#npm:2.0.7"],\
-            ["classnames", "npm:2.3.1"],\
+            ["classnames", "npm:2.3.2"],\
             ["eslint", "npm:8.22.0"],\
             ["eslint-config-next", "virtual:0824480ade294aa0544548ac7118269cbdd3643e18de4c9f3ce2a5f827889e7d8db80b707c85b5ec0c67261c9625a0e2721d972be8bc88bba765214ab7c0981b#npm:12.2.5"],\
             ["jshint", "npm:2.13.5"],\
@@ -1080,10 +1080,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["classnames", [\
-        ["npm:2.3.1", {\
-          "packageLocation": "./.yarn/cache/classnames-npm-2.3.1-f2ae0a8d3c-14db8889d5.zip/node_modules/classnames/",\
+        ["npm:2.3.2", {\
+          "packageLocation": "./.yarn/cache/classnames-npm-2.3.2-d2fdae468d-2c62199789.zip/node_modules/classnames/",\
           "packageDependencies": [\
-            ["classnames", "npm:2.3.1"]\
+            ["classnames", "npm:2.3.2"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -2709,7 +2709,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react-redux", "npm:7.1.24"],\
             ["@types/styled-components", "npm:5.1.26"],\
             ["babel-plugin-styled-components", "virtual:0824480ade294aa0544548ac7118269cbdd3643e18de4c9f3ce2a5f827889e7d8db80b707c85b5ec0c67261c9625a0e2721d972be8bc88bba765214ab7c0981b#npm:2.0.7"],\
-            ["classnames", "npm:2.3.1"],\
+            ["classnames", "npm:2.3.2"],\
             ["eslint", "npm:8.22.0"],\
             ["eslint-config-next", "virtual:0824480ade294aa0544548ac7118269cbdd3643e18de4c9f3ce2a5f827889e7d8db80b707c85b5ec0c67261c9625a0e2721d972be8bc88bba765214ab7c0981b#npm:12.2.5"],\
             ["jshint", "npm:2.13.5"],\

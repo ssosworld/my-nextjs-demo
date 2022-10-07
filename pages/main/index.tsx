@@ -12,14 +12,18 @@ const list = [
   },
   {
     title: "동적 input",
-    path: "practice",
+    path: "radio",
+  },
+  {
+    title: "CheckBox checked 관리",
+    path: "checkbox",
   },
 ];
 
 export default function Home() {
   const onMove = (path: string) => {
     router.push({
-      pathname: `/main/${path}`,
+      pathname: `/practice/${path}`,
     });
   };
 
@@ -49,4 +53,6 @@ const HomeBlock = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  line-height: 25px;
+  font-size: 17px;
 `;
