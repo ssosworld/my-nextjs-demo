@@ -18,6 +18,10 @@ const list = [
     title: "CheckBox checked 관리",
     path: "checkbox",
   },
+  {
+    title: "recoil 사용하기",
+    path: "recoil",
+  },
 ];
 
 export default function Home() {
