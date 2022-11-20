@@ -2,6 +2,9 @@ import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import Button from "../common/Button";
 import Checkbox from "../common/Checkbox";
+import TextLink from "../common/TextLink";
+import SubChecked from "./SubChecked";
+import BottomSheet from "../common/BottomSheet";
 
 const terms = [
   { id: "agree1", text: "[필수] 체크1" },
@@ -106,13 +109,15 @@ export default function ManageChecked() {
                   // checked={isAllChecked && true}
                   checked={checkedItems.includes(el.id) && true}
                 />
-                {/* <TextLink
-                  text="자세히"
-                  url="#!"
-                  type="underline"
-                  size="xtiny"
-                  onClick={() => onAgreeMore(index + 1)}
-                /> */}
+                {index === 3 && (
+                  <TextLink
+                    text="자세히"
+                    url="#!"
+                    type="underline"
+                    size="xtiny"
+                    onClick={() => onAgreeMore(2)}
+                  />
+                )}
               </li>
             ))}
           </ul>
@@ -129,6 +134,14 @@ export default function ManageChecked() {
           // onClick={onNextPage}
         />
       </div>
+
+      <BottomSheet open={isModal2} onClick={() => modalOn2(false)}>
+        <SubChecked
+          checkedTop={checkedItems.includes("agree4") && true}
+          checkedTopItems={checkedItems}
+          setCheckedTopItems={setCheckedItems}
+        />
+      </BottomSheet>
     </WrapBox>
   );
 }
